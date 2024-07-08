@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fitlifefavi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria - Klub Fitness FitLife</title>
+</head>
+<body>
+    <header>
+        <script src="js/accessibility.js"></script>
+        <a href="index.html"><img src="fitlife.png" alt="Fitlife" height="50px" width="70px"></a>
+        <h1>Klub fitness FitLife Miejsce ludzi aktywnych</h1>
+        <div id="accessibility-controls">
+            <button onclick="increaseFontSize()"><img class="access" src="images/a_10138116.png" alt="powieksz"></button>
+            <button onclick="decreaseFontSize()"><img class="access" src="images/a_101.png" alt="zmniejsz"></button>
+            <button onclick="toggleHighContrast()"><img class="access" src="images/contrast1.png" alt="kontrast"></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="5">Strona Główna</a></li>
+            <li><a href="oferta.html" tabindex="6">Oferta</a></li>
+            <li><a href="cennik.html" tabindex="7">Cennik</a></li>
+            <li><a href="strefaklienta.html" tabindex="8">Strefa klienta</a></li>
+            <li><a href="galeria.html" tabindex="-1">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <main>
+            <section id="gallery">
+                <div class="slides">
+                    <img class="zdj" src="images/21056129_1703893242977716_2261314522388522935_o.jpg" alt="Photo 1">
+                    <img class="zdj" src="images/83269827_2902155996515943_4267799136771768320_n.jpg" alt="Photo 2">
+                    <img class="zdj" src="images/107634491_3525138727519816_1456564469505428316_n.jpg" alt="Photo 3">
+                    <img class="zdj" src="images/MAsterclass 27.05.2023.jpg" alt="Photo 4">
+                    <img class="zdj" src="images/master1603.png" alt="Photo 5">
+                    <img class="zdj" src="images/step.jpg" alt="Photo 6">
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </section>
+        </main>
+    </main>
+    <footer id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+        <p>info@fitlife.com</p>
+
+    </footer>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fitlifefavi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cennik - Klub Fitness FitLife</title>
+</head>
+<body>
+    <header>
+        <script src="js/accessibility.js"></script>
+        <a href="index.html"><img src="fitlife.png" alt="Fitlife" height="50px" width="70px"></a>
+        <h1>Klub fitness FitLife Miejsce ludzi aktywnych</h1>
+        <div id="accessibility-controls">
+            <button onclick="increaseFontSize()"><img class="access" src="images/a_10138116.png" alt="powieksz"></button>
+            <button onclick="decreaseFontSize()"><img class="access" src="images/a_101.png" alt="zmniejsz"></button>
+            <button onclick="toggleHighContrast()"><img class="access" src="images/contrast1.png" alt="kontrast"></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="5">Strona Główna</a></li>
+            <li><a href="oferta.html" tabindex="6">Oferta</a></li>
+            <li><a href="cennik.html" tabindex="7">Cennik</a></li>
+            <li><a href="strefaklienta.html" tabindex="8">Strefa klienta</a></li>
+            <li><a href="galeria.html" tabindex="-1">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="cennik">
+            <h2>Rodzaje karnetów</h2>
+            <div class="cennik-box">
+                <h3>Karnet VIP</h3>
+                <p>Dostęp do wszystkich zajęć fitness przez miesiąc.</p>
+                <p>Cena: XXX zł</p>
+                <button onclick="location.href='kup.html?karnet=vip'">Kup teraz</button>
+            </div>
+            <div class="cennik-box">
+                <h3>Karnet SkillX</h3>
+                <p>Dostęp do wszystkich zajęć SkillX przez miesiąc.</p>
+                <p>Cena: XXX zł</p>
+                <button onclick="location.href='kup.html?karnet=skillx'">Kup teraz</button>
+            </div>
+            <div class="cennik-box">
+                <h3>Karnet OPEN</h3>
+                <p>Dostęp do wszystkich zajęć fitness oraz SkillX przez miesiąc.</p>
+                <p>Cena: XXX zł</p>
+                <button onclick="location.href='kup.html?karnet=open'">Kup teraz</button>
+            </div>
+            <div class="cennik-box">
+                <h3>Karnet roczny</h3>
+                <p>Dostęp do wszystkich zajęć przez cały rok.</p>
+                <p>Cena: XXX zł</p>
+                <button onclick="location.href='kup.html?karnet=roczny'">Kup teraz</button>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+        <p>info@fitlife.com</p>
+    </footer>
+</body>
+</html>

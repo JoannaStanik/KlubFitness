@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fitlifefavi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Strefa klienta - Klub Fitness FitLife</title>
+</head>
+<body>
+    <header>
+        <script src="js/accessibility.js"></script>
+        <a href="index.html"><img src="fitlife.png" alt="Fitlife" height="50px" width="70px"></a>
+        <h1>Klub fitness FitLife Miejsce ludzi aktywnych</h1>
+        <div id="accessibility-controls">
+            <button onclick="increaseFontSize()"><img class="access" src="images/a_10138116.png" alt="powieksz"></button>
+            <button onclick="decreaseFontSize()"><img class="access" src="images/a_101.png" alt="zmniejsz"></button>
+            <button onclick="toggleHighContrast()"><img class="access" src="images/contrast1.png" alt="kontrast"></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="5">Strona Główna</a></li>
+            <li><a href="oferta.html" tabindex="6">Oferta</a></li>
+            <li><a href="cennik.html" tabindex="7">Cennik</a></li>
+            <li><a href="strefaklienta.html" tabindex="8">Strefa klienta</a></li>
+            <li><a href="galeria.html" tabindex="-1">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <caption>Grafik</caption>
+            <thead>
+                <tr>
+                    <th>Godzina</th>
+                    <th>Poniedziałek</th>
+                    <th>Wtorek</th>
+                    <th>Środa</th>
+                    <th>Czwartek</th>
+                    <th>Piątek</th>
+                    <th>Sobota</th>
+                    <th>Niedziela</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Body BPU <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Streching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Salsation <br><button class="sign-up-btn">Zapisz się</button></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Fitball <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td class="class-cell">Stretching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Kickboxing <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Functional Training <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Body BPU <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:00 - 19:00</td>
+                    <td class="class-cell">Fitball <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Stretching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Functional Training <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <section id="login-register">
+            <h2>Logowanie / Rejestracja</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'login')">Logowanie</button>
+                <button class="tablinks" onclick="openTab(event, 'register')">Rejestracja</button>
+            </div>
+
+            <!-- Karta logowania -->
+            <div id="login" class="tabcontent">
+                <h3>Logowanie</h3>
+                <form action="login.php" method="post">
+                    <label for="username">Nazwa użytkownika:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Hasło:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit">Zaloguj się</button>
+                </form>
+            </div>
+
+            <!-- Karta rejestracji -->
+            <div id="register" class="tabcontent">
+                <h3>Rejestracja</h3>
+                <form action="register.php" method="post">
+                    <label for="new-username">Nowa nazwa użytkownika:</label><br>
+                    <input type="text" id="new-username" name="new-username" required><br>
+                    <label for="new-email">Adres email:</label><br>
+                    <input type="email" id="new-email" name="new-email" required><br>
+                    <label for="new-password">Nowe hasło:</label><br>
+                    <input type="password" id="new-password" name="new-password" required><br>
+                    <button type="submit">Zarejestruj się</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+        <p>info@fitlife.com</p>
+    </footer>
+    <script src="js/strefaklienta.js"></script>
+</body>
+</html>
